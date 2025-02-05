@@ -7,6 +7,10 @@ export default {
     ],
       theme: {
           extend: {
+              fontSize: {
+                  'xxs': '0.625rem',
+                  'xxxs': '0.5rem',
+              },
               dropShadow: {
                   glow: [
                       "0 0px 20px rgba(255,255, 255, 0.35)",
@@ -15,6 +19,6 @@ export default {
               }
           },
       },
-      plugins: [],
+      plugins: [require('tailwindcss-motion')],
 }
 
